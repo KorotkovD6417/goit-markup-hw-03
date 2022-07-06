@@ -1,0 +1,215 @@
+:root {
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --accent-color: #2196F3;
+    --white-color: #FFFFFF;
+}
+                                      
+         /* index.html */
+.bodypage {
+    background-color: var(--white-color);
+    font-family: Roboto, sans-serif;
+}
+ul {
+    list-style: none;
+}
+        /* Header */
+.header-logo {
+    color: #000000;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2px;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+.header-word {
+    color: var(--accent-color);
+}
+.header-list a {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.header-list a:hover,
+.header-list a:focus {
+    color: var(--accent-color);
+}
+
+.header-list a.current {
+    color: var(--accent-color);
+}
+.header-contact-list a {
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+.header-contact-list a:hover,
+.header-contact-list a:focus {
+    color: var(--accent-color);
+}
+
+         /* Maine */
+/* Hero */
+.hero-section {
+    color: var(--white-color);
+    background-color: #2F303A;
+}
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.button-primary {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+
+/* Features */
+.section-title {
+    color: var(--primary-text-color);
+}
+.list .title {
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.list .paragraph {
+    color: var(--secondary-text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+/* What we do */
+.job-title {
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+/* Team */
+.team-section {
+    background-color: #F5F4FA;
+}
+.team-title {
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.team-list .team-item-title {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.team-list .team-item-paragraph {
+    color: var(--secondary-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+         /* Footer */
+.footer-section {
+    background-color: #2F303A;
+}
+.footer-logo {
+    color: var(--white-color);
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+.footer-word {
+    color: var(--accent-color);
+}
+.footer-list .address {
+    color: var(--white-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+.footer-list .link {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+.footer-list a:hover,
+.footer-list a:focus {
+    color: var(--accent-color);
+}
+
+         /* PORTFOLIO.HTML */
+
+/* Maine Model */
+.button-secondary {
+    color: var(--primary-text-color);
+    background-color: #F5F4FA;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+}
+.button-secondary:hover,
+.button-secondary:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+}
+.features-list .features-title {
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.features-list .features-paragraph {
+    color: var(--secondary-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+}
