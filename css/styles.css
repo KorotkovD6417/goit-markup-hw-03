@@ -34,7 +34,7 @@ img {
     padding-right: 15px;
     padding-left: 15px;
 
-    outline:2px solid tomato;
+    
 }
                                       
          /* index.html */
@@ -222,13 +222,16 @@ img {
     text-align: center;
     background-color: #F5F4FA;
 }
+.team-title {
+    padding-bottom: 50px;
+}
 .team-list {
     display: flex;
 }
-.team-list {
+.team-item {
     width: calc((100 - 3 * 30px) / 4);
 }
-.team-list:not(:last-child) {
+.team-item:not(:last-child) {
     margin-right: 30px;
 }
 .team-title {
@@ -265,8 +268,13 @@ img {
          /* Footer */
 .footer-section {
     background-color: #2F303A;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .footer-logo {
+    display: block;
+    margin-bottom: 20px;
     color: var(--white-color);
     font-family: Raleway, sans-serif;
     font-style: normal;
@@ -288,6 +296,9 @@ img {
     letter-spacing: 0.03em;
     text-decoration: none;
 }
+.footer-list > .footer-item:not(:last-child) {
+    margin-bottom: 9px;
+}
 .footer-list .link {
     color: rgba(255, 255, 255, 0.6);
     font-style: normal;
@@ -305,7 +316,30 @@ img {
          /* PORTFOLIO.HTML */
 
 /* Maine Model */
+.header.line {
+    border-bottom: 1px solid #ECECEC;
+}
+.model-section .title {
+    display: none;
+}
+.model-section {
+    padding-top: 94px;
+    padding-right: auto;
+    padding-bottom: 94px;
+    padding-left: auto;
+}
+.model-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.model-list > .model-item:not(:last-child) {
+    margin-right: 8px;
+}
 .button-secondary {
+    border-radius: 4px;
+    border: 0 solid transparent;
+    padding: 6px 22px;
     color: var(--primary-text-color);
     background-color: #F5F4FA;
     font-family: inherit;
@@ -321,7 +355,20 @@ img {
     color: var(--white-color);
     background-color: var(--accent-color);
 }
+.features-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.features-list {
+    width: calc((100 - 2 * 30) / 3);
+}
+.features-list:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
 .features-list .features-title {
+    margin-bottom: 4px;
+
     color: var(--primary-text-color);
     font-weight: 700;
     font-size: 18px;
@@ -334,4 +381,8 @@ img {
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
+}
+.features-irem .features-box {
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
 }
