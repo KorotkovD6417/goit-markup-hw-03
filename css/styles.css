@@ -4,16 +4,55 @@
     --accent-color: #2196F3;
     --white-color: #FFFFFF;
 }
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+img {
+    vertical-align: middle;
+}
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    outline:2px solid tomato;
+}
                                       
          /* index.html */
 .bodypage {
     background-color: var(--white-color);
     font-family: Roboto, sans-serif;
 }
-ul {
-    list-style: none;
-}
+
         /* Header */
+.header .navigation {
+    display: flex;
+    align-items: center;
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+}
 .header-logo {
     color: #000000;
     font-family: Raleway, sans-serif;
@@ -25,6 +64,14 @@ ul {
 }
 .header-word {
     color: var(--accent-color);
+}
+.header-list {
+    display: flex;
+    margin-left: 93px;
+}
+
+.header-list .header-item:not(:last-child) {
+    margin-right: 50px;
 }
 .header-list a {
     color: var(--primary-text-color);
@@ -43,7 +90,19 @@ ul {
 .header-list a.current {
     color: var(--accent-color);
 }
+.header-contact-list {
+    display: flex;
+    margin-left: auto;
+}
+
+.header-contact-list .header-item:not(:last-child) {
+    margin-right: 50px;
+}
 .header-contact-list a {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--secondary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -59,10 +118,19 @@ ul {
          /* Maine */
 /* Hero */
 .hero-section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
     color: var(--white-color);
     background-color: #2F303A;
+    text-align: center;
 }
 .hero-title {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    width: 696px;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
@@ -71,21 +139,40 @@ ul {
     text-transform: uppercase;
 }
 .button-primary {
+    border-radius: 4px;
+    border: 0 solid transparent;
+    padding: 10px 32px;
+
     color: var(--white-color);
     background-color: var(--accent-color);
+
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.06em;
     cursor: pointer;
+    text-align: center;
 }
 
 /* Features */
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .section-title {
     color: var(--primary-text-color);
+    display: none;
+}
+.list {
+    display: flex;
+}
+.list > .item:not(:last-child) {
+    margin-right: 30px;
 }
 .list .title {
+    margin-bottom: 10px;
+
     color: var(--primary-text-color);
     font-weight: 700;
     font-size: 14px;
@@ -94,6 +181,8 @@ ul {
     text-transform: uppercase;
 }
 .list .paragraph {
+    width: 270px;
+
     color: var(--secondary-text-color);
     font-weight: 400;
     font-size: 14px;
@@ -102,7 +191,11 @@ ul {
 }
 
 /* What we do */
+.job-section {
+    padding-bottom: 94px;
+}
 .job-title {
+    margin-bottom: 50px;
     color: var(--primary-text-color);
     font-weight: 700;
     font-size: 36px;
@@ -110,10 +203,33 @@ ul {
     text-align: center;
     letter-spacing: 0.03em;
 }
+.job-list {
+    display:flex; 
+}
+.job-item {
+    width: calc((100 - 2 * 30px) / 3);
+}
+.job-item:not(:last-child) {
+    margin-right: 30px;
+}
 
 /* Team */
+
 .team-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    text-align: center;
     background-color: #F5F4FA;
+}
+.team-list {
+    display: flex;
+}
+.team-list {
+    width: calc((100 - 3 * 30px) / 4);
+}
+.team-list:not(:last-child) {
+    margin-right: 30px;
 }
 .team-title {
     color: var(--primary-text-color);
@@ -124,6 +240,8 @@ ul {
     letter-spacing: 0.03em;
 }
 .team-list .team-item-title {
+    margin-bottom: 10px;
+
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -138,6 +256,10 @@ ul {
     line-height: 1.9;
     text-align: center;
     letter-spacing: 0.03em;
+}
+.box {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
          /* Footer */
