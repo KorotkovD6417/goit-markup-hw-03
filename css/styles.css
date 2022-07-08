@@ -74,6 +74,10 @@ img {
     margin-right: 50px;
 }
 .header-list a {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -223,7 +227,7 @@ img {
     background-color: #F5F4FA;
 }
 .team-title {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 .team-list {
     display: flex;
